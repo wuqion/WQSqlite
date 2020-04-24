@@ -29,8 +29,12 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'WQSqlite/Classes/**/*'
+if ENV['IS_SOURCE']
+    s.source_files = 'WQSqlite/Classes/**/*'
+else
+    s.source_files = 'WQSqlite/Classes/**/*.h'
+    s.vendored_frameworks = 'WQSqlite/Products/*'
+end
   
   # s.resource_bundles = {
   #   'WQSqlite' => ['WQSqlite/Assets/*.png']

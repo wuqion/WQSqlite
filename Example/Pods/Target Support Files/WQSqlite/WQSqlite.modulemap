@@ -1,0 +1,6 @@
+framework module WQSqlite {
+  umbrella header "WQSqlite-umbrella.h"
+
+  export *
+  module * { export * }
+}

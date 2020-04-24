@@ -1,0 +1,16 @@
+PODS:
+  - WQSqlite (0.1.0)
+
+DEPENDENCIES:
+  - WQSqlite (from `../`)
+
+EXTERNAL SOURCES:
+  WQSqlite:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WQSqlite: 70235ddc14372e2224b0a5ab52a8f425062de9e1
+
+PODFILE CHECKSUM: a4b4ab7a7dcab1179e57a0d9e9f713230efcbf0a
+
+COCOAPODS: 1.8.4
