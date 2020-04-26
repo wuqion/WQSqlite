@@ -10,7 +10,11 @@
 #endif
 #endif
 
+#import "WQModelProtocol.h"
+#import "WQModelTools.h"
+#import "WQSqliteModelTools.h"
 #import "WQSqliteTools.h"
+#import "WQTableTool.h"
 
 FOUNDATION_EXPORT double WQSqliteVersionNumber;
 FOUNDATION_EXPORT const unsigned char WQSqliteVersionString[];

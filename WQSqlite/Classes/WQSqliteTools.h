@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 //查找
 + (NSMutableArray<NSMutableDictionary *>*)querySql:(NSString *)sql uid:(NSString *)uid;
+
++ (BOOL)dealSqls:(NSArray <NSString *>*)sqls uid:(NSString *)uid;
 @end
 
 NS_ASSUME_NONNULL_END

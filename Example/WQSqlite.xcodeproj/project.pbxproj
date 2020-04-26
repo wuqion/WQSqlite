@@ -7,39 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28B57C3A106A10A280CCBC97 /* Pods_WQSqlite_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89635C3DEB6B31212AB548D /* Pods_WQSqlite_Tests.framework */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* WQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* WQAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* WQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* WQViewController.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		79AB18FE2452C81500E3EF45 /* WQSqliteTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 79AB18FC2452C81500E3EF45 /* WQSqliteTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79AB18FF2452C81500E3EF45 /* WQSqliteTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB18FD2452C81500E3EF45 /* WQSqliteTools.m */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		758EFD1D383D0167AB4D9ED1 /* Pods_WQSqlite_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2D3BDF58A63A7F1894D0C9 /* Pods_WQSqlite_Example.framework */; };
+		7907E9A0245558E0009EED1C /* WQSqlite_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907E99D245558E0009EED1C /* WQSqlite_ExampleTests.m */; };
+		7907E9A1245558E0009EED1C /* WQSqlTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907E99F245558E0009EED1C /* WQSqlTestModel.m */; };
+		7907E9AD24555920009EED1C /* WQSqliteModelTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907E9A424555920009EED1C /* WQSqliteModelTools.m */; };
+		7907E9AE24555920009EED1C /* WQSqliteModelTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907E9A424555920009EED1C /* WQSqliteModelTools.m */; };
+		7907E9AF24555920009EED1C /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 7907E9A624555920009EED1C /* .gitkeep */; };
+		7907E9B024555920009EED1C /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 7907E9A624555920009EED1C /* .gitkeep */; };
+		7907E9B124555920009EED1C /* WQModelTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907E9A924555920009EED1C /* WQModelTools.m */; };
+		7907E9B224555920009EED1C /* WQModelTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907E9A924555920009EED1C /* WQModelTools.m */; };
+		7907E9B324555920009EED1C /* WQSqliteTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907E9AA24555920009EED1C /* WQSqliteTools.m */; };
+		7907E9B424555920009EED1C /* WQSqliteTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907E9AA24555920009EED1C /* WQSqliteTools.m */; };
+		7907E9B524555920009EED1C /* WQTableTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907E9AC24555920009EED1C /* WQTableTool.m */; };
+		7907E9B624555920009EED1C /* WQTableTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907E9AC24555920009EED1C /* WQTableTool.m */; };
+		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		B456DD7590F2C905A57A11C9 /* Pods_WQSqlite_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF389E881C777674959A7E21 /* Pods_WQSqlite_Tests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = WQSqlite;
+		};
+		7907E998245558AA009EED1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = WQSqlite_Example;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		33771EBC2847B868B89C7AD8 /* Pods-WQSqlite_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQSqlite_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WQSqlite_Tests/Pods-WQSqlite_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		46FFB1CD58A0BADBDC64E67C /* WQSqlite.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WQSqlite.podspec; path = ../WQSqlite.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		06FC2E964C68F1D0813C5271 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		27D76F38F5B2E7FA5BE8079A /* WQSqlite.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WQSqlite.podspec; path = ../WQSqlite.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3CC7E28A0FD58D757CBB8D27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		58E2E1EB2958F1DD5D2982A9 /* Pods-WQSqlite_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQSqlite_Example.release.xcconfig"; path = "Target Support Files/Pods-WQSqlite_Example/Pods-WQSqlite_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* WQSqlite_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WQSqlite_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* WQSqlite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WQSqlite-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* WQSqlite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WQSqlite-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* WQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* WQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* WQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* WQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQViewController.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* WQSqlite_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WQSqlite_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		79AB18F42452C72E00E3EF45 /* WQSqliteBinary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WQSqliteBinary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79AB18F72452C72E00E3EF45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79AB18FC2452C81500E3EF45 /* WQSqliteTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WQSqliteTools.h; path = ../../WQSqlite/Classes/WQSqliteTools.h; sourceTree = "<group>"; };
-		79AB18FD2452C81500E3EF45 /* WQSqliteTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WQSqliteTools.m; path = ../../WQSqlite/Classes/WQSqliteTools.m; sourceTree = "<group>"; };
-		7DFBE8A9CA004712A443A831 /* Pods-WQSqlite_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQSqlite_Tests.release.xcconfig"; path = "Target Support Files/Pods-WQSqlite_Tests/Pods-WQSqlite_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A2B0BE892D11B4DD5BB00769 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		B89635C3DEB6B31212AB548D /* Pods_WQSqlite_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WQSqlite_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBD26E2B1C41B9A01F44129C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7907E993245558AA009EED1C /* WQSqlite_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WQSqlite_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7907E997245558AA009EED1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7907E99D245558E0009EED1C /* WQSqlite_ExampleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSqlite_ExampleTests.m; sourceTree = "<group>"; };
+		7907E99E245558E0009EED1C /* WQSqlTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSqlTestModel.h; sourceTree = "<group>"; };
+		7907E99F245558E0009EED1C /* WQSqlTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSqlTestModel.m; sourceTree = "<group>"; };
+		7907E9A324555920009EED1C /* WQModelTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQModelTools.h; sourceTree = "<group>"; };
+		7907E9A424555920009EED1C /* WQSqliteModelTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSqliteModelTools.m; sourceTree = "<group>"; };
+		7907E9A524555920009EED1C /* WQSqliteTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSqliteTools.h; sourceTree = "<group>"; };
+		7907E9A624555920009EED1C /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		7907E9A724555920009EED1C /* WQTableTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQTableTool.h; sourceTree = "<group>"; };
+		7907E9A824555920009EED1C /* WQModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQModelProtocol.h; sourceTree = "<group>"; };
+		7907E9A924555920009EED1C /* WQModelTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQModelTools.m; sourceTree = "<group>"; };
+		7907E9AA24555920009EED1C /* WQSqliteTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSqliteTools.m; sourceTree = "<group>"; };
+		7907E9AB24555920009EED1C /* WQSqliteModelTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSqliteModelTools.h; sourceTree = "<group>"; };
+		7907E9AC24555920009EED1C /* WQTableTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQTableTool.m; sourceTree = "<group>"; };
+		7CB33350CC7E2F8DA9BB6EB5 /* Pods-WQSqlite_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQSqlite_Example.debug.xcconfig"; path = "Target Support Files/Pods-WQSqlite_Example/Pods-WQSqlite_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88BEAC52351BA7E99AC37DB0 /* Pods-WQSqlite_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQSqlite_Tests.release.xcconfig"; path = "Target Support Files/Pods-WQSqlite_Tests/Pods-WQSqlite_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DF389E881C777674959A7E21 /* Pods_WQSqlite_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WQSqlite_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF24D905E8DE666C2019EFD1 /* Pods-WQSqlite_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQSqlite_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WQSqlite_Tests/Pods-WQSqlite_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF2D3BDF58A63A7F1894D0C9 /* Pods_WQSqlite_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WQSqlite_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				758EFD1D383D0167AB4D9ED1 /* Pods_WQSqlite_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F5AB195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,11 +122,11 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				28B57C3A106A10A280CCBC97 /* Pods_WQSqlite_Tests.framework in Frameworks */,
+				B456DD7590F2C905A57A11C9 /* Pods_WQSqlite_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79AB18F12452C72E00E3EF45 /* Frameworks */ = {
+		7907E990245558AA009EED1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,23 +136,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32359576160F723806A93835 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CB33350CC7E2F8DA9BB6EB5 /* Pods-WQSqlite_Example.debug.xcconfig */,
+				58E2E1EB2958F1DD5D2982A9 /* Pods-WQSqlite_Example.release.xcconfig */,
+				EF24D905E8DE666C2019EFD1 /* Pods-WQSqlite_Tests.debug.xcconfig */,
+				88BEAC52351BA7E99AC37DB0 /* Pods-WQSqlite_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for WQSqlite */,
 				6003F5B5195388D20070C39A /* Tests */,
-				79AB18F52452C72E00E3EF45 /* WQSqliteBinary */,
+				7907E994245558AA009EED1C /* WQSqlite_ExampleTests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				AC0F743CBCEED045E2B2D04F /* Pods */,
+				32359576160F723806A93835 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				6003F58A195388D20070C39A /* WQSqlite_Example.app */,
 				6003F5AE195388D20070C39A /* WQSqlite_Tests.xctest */,
-				79AB18F42452C72E00E3EF45 /* WQSqliteBinary.framework */,
+				7907E993245558AA009EED1C /* WQSqlite_ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,9 +177,38 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				B89635C3DEB6B31212AB548D /* Pods_WQSqlite_Tests.framework */,
+				FF2D3BDF58A63A7F1894D0C9 /* Pods_WQSqlite_Example.framework */,
+				DF389E881C777674959A7E21 /* Pods_WQSqlite_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for WQSqlite */ = {
+			isa = PBXGroup;
+			children = (
+				7907E9A224555920009EED1C /* Classes */,
+				6003F59C195388D20070C39A /* WQAppDelegate.h */,
+				6003F59D195388D20070C39A /* WQAppDelegate.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F5A5195388D20070C39A /* WQViewController.h */,
+				6003F5A6195388D20070C39A /* WQViewController.m */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = "Example for WQSqlite";
+			path = WQSqlite;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* WQSqlite-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* WQSqlite-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6003F5B5195388D20070C39A /* Tests */ = {
@@ -116,82 +233,100 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				46FFB1CD58A0BADBDC64E67C /* WQSqlite.podspec */,
-				EBD26E2B1C41B9A01F44129C /* README.md */,
-				A2B0BE892D11B4DD5BB00769 /* LICENSE */,
+				27D76F38F5B2E7FA5BE8079A /* WQSqlite.podspec */,
+				06FC2E964C68F1D0813C5271 /* README.md */,
+				3CC7E28A0FD58D757CBB8D27 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		79AB18F52452C72E00E3EF45 /* WQSqliteBinary */ = {
+		7907E994245558AA009EED1C /* WQSqlite_ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				79AB18FC2452C81500E3EF45 /* WQSqliteTools.h */,
-				79AB18FD2452C81500E3EF45 /* WQSqliteTools.m */,
-				79AB18F72452C72E00E3EF45 /* Info.plist */,
+				7907E99D245558E0009EED1C /* WQSqlite_ExampleTests.m */,
+				7907E99E245558E0009EED1C /* WQSqlTestModel.h */,
+				7907E99F245558E0009EED1C /* WQSqlTestModel.m */,
+				7907E997245558AA009EED1C /* Info.plist */,
 			);
-			path = WQSqliteBinary;
+			path = WQSqlite_ExampleTests;
 			sourceTree = "<group>";
 		};
-		AC0F743CBCEED045E2B2D04F /* Pods */ = {
+		7907E9A224555920009EED1C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				33771EBC2847B868B89C7AD8 /* Pods-WQSqlite_Tests.debug.xcconfig */,
-				7DFBE8A9CA004712A443A831 /* Pods-WQSqlite_Tests.release.xcconfig */,
+				7907E9A324555920009EED1C /* WQModelTools.h */,
+				7907E9A424555920009EED1C /* WQSqliteModelTools.m */,
+				7907E9A524555920009EED1C /* WQSqliteTools.h */,
+				7907E9A624555920009EED1C /* .gitkeep */,
+				7907E9A724555920009EED1C /* WQTableTool.h */,
+				7907E9A824555920009EED1C /* WQModelProtocol.h */,
+				7907E9A924555920009EED1C /* WQModelTools.m */,
+				7907E9AA24555920009EED1C /* WQSqliteTools.m */,
+				7907E9AB24555920009EED1C /* WQSqliteModelTools.h */,
+				7907E9AC24555920009EED1C /* WQTableTool.m */,
 			);
-			path = Pods;
+			name = Classes;
+			path = ../../WQSqlite/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		79AB18EF2452C72E00E3EF45 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79AB18FE2452C81500E3EF45 /* WQSqliteTools.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		6003F5AD195388D20070C39A /* WQSqlite_Tests */ = {
+		6003F589195388D20070C39A /* WQSqlite_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "WQSqlite_Tests" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "WQSqlite_Example" */;
 			buildPhases = (
-				E2FA439910853B3D58D9279C /* [CP] Check Pods Manifest.lock */,
-				6003F5AA195388D20070C39A /* Sources */,
-				6003F5AB195388D20070C39A /* Frameworks */,
-				6003F5AC195388D20070C39A /* Resources */,
-				43A701C12B79939D9A1B6F3E /* [CP] Embed Pods Frameworks */,
+				FDB585E7582294F986A089B2 /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				078FA3F2EA4DD853C3536D30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = WQSqlite_Example;
+			productName = WQSqlite;
+			productReference = 6003F58A195388D20070C39A /* WQSqlite_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F5AD195388D20070C39A /* WQSqlite_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "WQSqlite_Tests" */;
+			buildPhases = (
+				3944266A46D51E380940E362 /* [CP] Check Pods Manifest.lock */,
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003F5B4195388D20070C39A /* PBXTargetDependency */,
 			);
 			name = WQSqlite_Tests;
 			productName = WQSqliteTests;
 			productReference = 6003F5AE195388D20070C39A /* WQSqlite_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		79AB18F32452C72E00E3EF45 /* WQSqliteBinary */ = {
+		7907E992245558AA009EED1C /* WQSqlite_ExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79AB18FB2452C72E00E3EF45 /* Build configuration list for PBXNativeTarget "WQSqliteBinary" */;
+			buildConfigurationList = 7907E99C245558AA009EED1C /* Build configuration list for PBXNativeTarget "WQSqlite_ExampleTests" */;
 			buildPhases = (
-				79AB18EF2452C72E00E3EF45 /* Headers */,
-				79AB18F02452C72E00E3EF45 /* Sources */,
-				79AB18F12452C72E00E3EF45 /* Frameworks */,
-				79AB18F22452C72E00E3EF45 /* Resources */,
+				7907E98F245558AA009EED1C /* Sources */,
+				7907E990245558AA009EED1C /* Frameworks */,
+				7907E991245558AA009EED1C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7907E999245558AA009EED1C /* PBXTargetDependency */,
 			);
-			name = WQSqliteBinary;
-			productName = WQSqliteBinary;
-			productReference = 79AB18F42452C72E00E3EF45 /* WQSqliteBinary.framework */;
-			productType = "com.apple.product-type.framework";
+			name = WQSqlite_ExampleTests;
+			productName = WQSqlite_ExampleTests;
+			productReference = 7907E993245558AA009EED1C /* WQSqlite_ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -206,10 +341,11 @@
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
-					79AB18F32452C72E00E3EF45 = {
+					7907E992245558AA009EED1C = {
 						CreatedOnToolsVersion = 11.3;
 						DevelopmentTeam = 93B4X36YV3;
 						ProvisioningStyle = Automatic;
+						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
 			};
@@ -227,13 +363,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				6003F589195388D20070C39A /* WQSqlite_Example */,
 				6003F5AD195388D20070C39A /* WQSqlite_Tests */,
-				79AB18F32452C72E00E3EF45 /* WQSqliteBinary */,
+				7907E992245558AA009EED1C /* WQSqlite_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				7907E9AF24555920009EED1C /* .gitkeep in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F5AC195388D20070C39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,23 +391,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79AB18F22452C72E00E3EF45 /* Resources */ = {
+		7907E991245558AA009EED1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7907E9B024555920009EED1C /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43A701C12B79939D9A1B6F3E /* [CP] Embed Pods Frameworks */ = {
+		078FA3F2EA4DD853C3536D30 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WQSqlite_Tests/Pods-WQSqlite_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WQSqlite_Example/Pods-WQSqlite_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/WQSqlite/WQSqlite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -267,10 +417,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WQSqlite_Tests/Pods-WQSqlite_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WQSqlite_Example/Pods-WQSqlite_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E2FA439910853B3D58D9279C /* [CP] Check Pods Manifest.lock */ = {
+		3944266A46D51E380940E362 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,9 +442,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FDB585E7582294F986A089B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WQSqlite_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F59E195388D20070C39A /* WQAppDelegate.m in Sources */,
+				6003F5A7195388D20070C39A /* WQViewController.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+				7907E9B324555920009EED1C /* WQSqliteTools.m in Sources */,
+				7907E9B124555920009EED1C /* WQModelTools.m in Sources */,
+				7907E9B524555920009EED1C /* WQTableTool.m in Sources */,
+				7907E9AD24555920009EED1C /* WQSqliteModelTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F5AA195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,23 +489,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79AB18F02452C72E00E3EF45 /* Sources */ = {
+		7907E98F245558AA009EED1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79AB18FF2452C81500E3EF45 /* WQSqliteTools.m in Sources */,
+				7907E9A1245558E0009EED1C /* WQSqlTestModel.m in Sources */,
+				7907E9AE24555920009EED1C /* WQSqliteModelTools.m in Sources */,
+				7907E9A0245558E0009EED1C /* WQSqlite_ExampleTests.m in Sources */,
+				7907E9B424555920009EED1C /* WQSqliteTools.m in Sources */,
+				7907E9B624555920009EED1C /* WQTableTool.m in Sources */,
+				7907E9B224555920009EED1C /* WQModelTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* WQSqlite_Example */;
+			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		7907E999245558AA009EED1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* WQSqlite_Example */;
+			targetProxy = 7907E998245558AA009EED1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -398,10 +618,43 @@
 			};
 			name = Release;
 		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB33350CC7E2F8DA9BB6EB5 /* Pods-WQSqlite_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WQSqlite/WQSqlite-Prefix.pch";
+				INFOPLIST_FILE = "WQSqlite/WQSqlite-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E2E1EB2958F1DD5D2982A9 /* Pods-WQSqlite_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WQSqlite/WQSqlite-Prefix.pch";
+				INFOPLIST_FILE = "WQSqlite/WQSqlite-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33771EBC2847B868B89C7AD8 /* Pods-WQSqlite_Tests.debug.xcconfig */;
+			baseConfigurationReference = EF24D905E8DE666C2019EFD1 /* Pods-WQSqlite_Tests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -424,8 +677,9 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DFBE8A9CA004712A443A831 /* Pods-WQSqlite_Tests.release.xcconfig */;
+			baseConfigurationReference = 88BEAC52351BA7E99AC37DB0 /* Pods-WQSqlite_Tests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -442,9 +696,10 @@
 			};
 			name = Release;
 		};
-		79AB18F92452C72E00E3EF45 /* Debug */ = {
+		7907E99A245558AA009EED1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -463,36 +718,27 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 93B4X36YV3;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = WQSqliteBinary/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = WQSqlite_ExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = ceshi.WQSqliteBinary;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "ceshi.WQSqlite-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WQSqlite_Example.app/WQSqlite_Example";
 			};
 			name = Debug;
 		};
-		79AB18FA2452C72E00E3EF45 /* Release */ = {
+		7907E99B245558AA009EED1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -512,30 +758,20 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 93B4X36YV3;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = WQSqliteBinary/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = WQSqlite_ExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = ceshi.WQSqliteBinary;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "ceshi.WQSqlite-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WQSqlite_Example.app/WQSqlite_Example";
 			};
 			name = Release;
 		};
@@ -551,6 +787,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "WQSqlite_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "WQSqlite_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -560,11 +805,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79AB18FB2452C72E00E3EF45 /* Build configuration list for PBXNativeTarget "WQSqliteBinary" */ = {
+		7907E99C245558AA009EED1C /* Build configuration list for PBXNativeTarget "WQSqlite_ExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79AB18F92452C72E00E3EF45 /* Debug */,
-				79AB18FA2452C72E00E3EF45 /* Release */,
+				7907E99A245558AA009EED1C /* Debug */,
+				7907E99B245558AA009EED1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

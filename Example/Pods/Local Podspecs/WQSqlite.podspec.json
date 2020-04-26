@@ -1,9 +1,9 @@
 {
   "name": "WQSqlite",
   "version": "0.1.0",
-  "summary": "A short description of WQSqlite.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/wuqiongaia@163.com/WQSqlite",
+  "summary": "第一版",
+  "description": "简单的只有基本操作",
+  "homepage": "https://github.com/wuqion/WQSqlite",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "wuqiongaia@163.com": "wuqiongaia@163.com"
   },
   "source": {
-    "git": "https://github.com/wuqiongaia@163.com/WQSqlite.git",
+    "git": "https://github.com/wuqion/WQSqlite.git",
     "tag": "0.1.0"
   },
   "platforms": {

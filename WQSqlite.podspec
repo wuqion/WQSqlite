@@ -27,13 +27,15 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-if ENV['IS_SOURCE']
-    s.source_files = 'WQSqlite/Classes/**/*'
-else
-    s.source_files = 'WQSqlite/Classes/**/*.h'
-    s.vendored_frameworks = 'WQSqlite/Products/*'
-end
-  
+  s.source_files = 'WQSqlite/Classes/**/*'
+# 引入二进制方式
+#  if ENV['IS_SOURCE']
+#      s.source_files = 'WQSqlite/Classes/**/*'
+#  else
+#      s.source_files = 'WQSqlite/Classes/**/*.h'
+#      s.vendored_frameworks = 'WQSqlite/Products/*'
+#  end
+
   # s.resource_bundles = {
   #   'WQSqlite' => ['WQSqlite/Assets/*.png']
   # }

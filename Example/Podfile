@@ -1,6 +1,13 @@
 use_frameworks!
-target 'WQSqlite_Tests' do
+
+platform :ios, '8.0'
+
+target 'WQSqlite_Example' do
   pod 'WQSqlite', :path => '../'
-  
-  
+
+  target 'WQSqlite_Tests' do
+    inherit! :search_paths
+
+    
+  end
 end

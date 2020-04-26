@@ -9,8 +9,8 @@
 #import "WQSqliteTools.h"
 #import <sqlite3.h>
 
-//#define kCachePath NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject
-#define kCachePath @"/Users/woshisha/Desktop/"
+#define kCachePath NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject
+//#define kCachePath @"/Users/woshisha/Desktop/"
 
 
 @implementation WQSqliteTools
@@ -20,7 +20,7 @@ static  sqlite3 * ppDb = nil;
 + (BOOL)deal:(NSString *)sql uid:(NSString *)uid
 {
     if (![self openDB:uid]) {
-        NSLog(@"打开失败");
+        NSLog(@"打开失败l");
         return NO;
     }
     //2.执行语句
@@ -44,8 +44,8 @@ static  sqlite3 * ppDb = nil;
     
     sqlite3_stmt *ppStmt = nil;
 
-    if (sqlite3_prepare_v2(ppDb, sql.UTF8String, -1, &ppStmt, nil) == SQLITE_OK) {
-        NSLog(@"准备j语句失败");
+    if (sqlite3_prepare_v2(ppDb, sql.UTF8String, -1, &ppStmt, nil) != SQLITE_OK) {
+        NSLog(@"准备语句失败");
         return nil;
     };
     
@@ -95,12 +95,39 @@ static  sqlite3 * ppDb = nil;
     //4.重置（省略）
     
     //5.释放资源
-    sqlite3_free(ppStmt);
     [self CloseDB];
+//    sqlite3_free(ppStmt); / /
     return rowDicArray;
     
 }
-
++ (BOOL)dealSqls:(NSArray <NSString *>*)sqls uid:(NSString *)uid
+{
+    [self beginTransaction:uid];
+    for (NSString * sql in sqls) {
+        if (![self deal:sql uid:uid]) {
+            [self rollBackTransaction:uid];
+            return NO;
+        };
+    }
+    [self commitTransaction:uid];
+    return YES;
+}
+#pragma mark --事物
+//开启事物
++ (void)beginTransaction:(NSString *)uid
+{
+    [self deal:@"begin transaction" uid:uid];
+}
+//
++ (void)commitTransaction:(NSString *)uid
+{
+    [self deal:@")commit transaction" uid:uid];
+}
+//回滚
++ (void)rollBackTransaction:(NSString *)uid
+{
+    [self deal:@"rollBack transaction" uid:uid];
+}
 #pragma mark - 私有方法
 + (BOOL )openDB:(NSString *)uid{
     NSString * dbName = @"common.sqlite";
@@ -110,7 +137,7 @@ static  sqlite3 * ppDb = nil;
     NSString * path = [kCachePath stringByAppendingPathComponent:dbName];
    
     //1.打开s/创建数据库
-    return sqlite3_open(path.UTF8String, &ppDb) != SQLITE_OK;
+    return sqlite3_open(path.UTF8String, &ppDb) == SQLITE_OK;
 }
 + (void)CloseDB{
     sqlite3_close(ppDb);
